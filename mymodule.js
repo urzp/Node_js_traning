@@ -1,6 +1,5 @@
 var fs = require('fs');
-var folder = process.argv[2];
-var type = process.argv[3];
+
 
 /*
 module.exports = function(){
@@ -8,7 +7,7 @@ module.exports = function(){
 }
 */
 
-module.exports = function(callback){
+module.exports = function(folder,type,callback){
 
   fs.readdir(folder, function (err, data){
     var filtred_data = [];
